@@ -1,52 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--changes-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Autodesk InfraWorks 360 for Developers by autodesk-infraworks-360</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Autodesk InfraWorks 360 for Developers</h1>
-        <p>REST API Samples</p>
-
-
-        <p class="view"><a href="https://github.com/autodesk-infraworks-360">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a id="autodesk-infraworks-360-rest-api" class="anchor" href="#autodesk-infraworks-360-rest-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>Autodesk InfraWorks 360 REST API</h3>
-
-<p>This API can be used to read models hosted/synched on Autodesk 360</p>
-
-<h3>
-<a id="articles" class="anchor" href="#articles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Articles</h3>
-
-<ul>
-<li>Blog post 1</li>
-<li>Blog post 2</li>
-<li>blog post 3</li>
-</ul>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Check full <a href="http://api-devprod-docs.infraworks.autodesk.com/">documentation</a>.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<head>
+  <title>Autodesk InfraWorks 360</title>
+  <meta charset="utf-8">
+  <meta content="chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="autodesk-infraworks-360.GitHub.io : The entry point of Autodesk InfraWorks 360 Rest API" name="description">
+  <!--bootstrap stylesheet-->
+  <!-- icons-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <!--owl carousel-->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <![endif]-->
+  <link href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <link href="css/ionicons.css" rel="stylesheet">
+  <link href="css/maria-theme-checkbox.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/maria-base-theme.css" rel="stylesheet">
+  <link href="css/maria-theme.css" rel="stylesheet">
+  <link href="css/open-sans.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="http://www.fuelcdn.com/fuelux/3.6.3/css/fuelux.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body data-spy="scroll" data-target="#nav-parent" class="fuelux">
+  <!--   NAVBAR     -->
+  <div class="bs-docs-section clearfix" id="navbar">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bs-component">
+          <div class="navbar navbar-default app-navbar">
+            <div class="container app-container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="https://developer.autodesk.com/"><img width="160px;" src="img/Autodesk_logo.png" style="padding: 20px;">Developer</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/autodesk-infraworks-360">View on GitHub<i class="fa fa-github-alt fa-fw"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+  </div>
+  <!--    END NAVBAR    -->
+  <!-- HEADER -->
+  <div class="clearfix">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header content-header app-content-header api-detail-header view-and-data-api" id="title">
+          <div class="container app-container">
+            <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9 app-title-container">
+              <h1 id="view-and-data-title">Autodesk InfraWorks 360 REST API Beta</h1>
+            </div>
+            <!--<p>Embedding vibrant 3D graphics in a Web Browser,
+                Support for almost 100 formats,
+                fast streaming large 2D and 3D models </p>-->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 app-button-container">
+              <p class="bs-component">
+                <a href="#create-app" class="btn app-btn app-btn-lg app-btn-primary create-app-btn pull-right">Create an App<span class="bg-icon size-21"><i class="icon ion-chevron-right"></i></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER --->
+  <!-- MAIN CONTENT -->
+  <div class="content-form app-content-form clearfix">
+    <div class="container app-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+          <div id="nav-parent" class="page-header hidden-xs">
+            <div data-clampedwidth="#nav-parent" data-spy="affix" data-offset-top="200" class="panel panel-default app-panel-default app-sidenav-panel">
+              <div class="navbar-collapse collapse navbar-responsive-collapse panel-body app-panel-body app-sidenav-body" role="complementary">
+                <ul class="nav nav-pills nav-stacked app-sidenav">
+                  <li role="presentation" class="active"><a href="#what-does-it-do" class="first-child">What Does it Do</a></li>
+                  <li role="presentation"><a href="#city-design" class="first-child">City Models</a></li>
+                  <li role="presentation"><a href="#rest-api" class="first-child">REST API</a></li>
+                  <li role="presentation"><a href="#live-sample" class="first-child">Live Sample</a></li>
+                  <li role="presentation"><a href="#documentation" class="first-child">Documentation</a></li>
+                  <li role="presentation"><a href="#create-app" class="first-child">Create Your App!</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nav-parent-mobile" class="page-header hidden-sm hidden-md hidden-lg">
+            <div data-clampedwidth="#nav-parent-mobile" data-spy="affix" data-offset-top="150" class="panel panel-default app-panel-default app-sidenav-panel">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-collapse collapse navbar-responsive-collapse panel-body app-panel-body app-sidenav-body" role="complementary">
+                <div class="col-lg-12">
+                  <ul class="nav nav-pills nav-stacked app-sidenav">
+                    <li role="presentation" class="active"><a href="#what-does-it-do" class="first-child" data-toggle="collapse" data-target=".navbar-responsive-collapse">What Does it Do</a></li>
+                    <li role="presentation"><a href="#city-design" data-toggle="collapse" data-target=".navbar-responsive-collapse">City Design</a></li>
+                    <li role="presentation"><a href="#rest-api" data-toggle="collapse" data-target=".navbar-responsive-collapse">REST API</a></li>
+                    <li role="presentation"><a href="#live-sample" data-toggle="collapse" data-target=".navbar-responsive-collapse">Live Sample</a></li>
+                    <li role="presentation"><a href="#documentation" data-toggle="collapse" data-target=".navbar-responsive-collapse">Documentation</a></li>
+                    <li role="presentation"><a href="#create-app" data-toggle="collapse" data-target=".navbar-responsive-collapse">Create your app!</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+          <div class="page-header">
+            <div class="panel panel-default app-panel-default">
+              <div class="panel-body app-panel-body app-api-doc">
+
+                <!-- begin: City Models -->
+                <div class="app-api-section">
+                  <div id="what-does-it-do" class="app-api-section-heading">
+                    <h2 class="app-api-section-title first-child">What exactly does the InfraWorks 360 API do?</h2>
+                  </div>
+                  <p>First, Autodesk InfraWorks 360 is a multi-platform product that can be used from desktop, tablets and on also on the browser. The REST API allow access to the model information hosted/synched on Autodesk 360 Cloud</p>
+                </div>
+                <!-- end: what does it do -->
+                <!-- begin: City Models -->
+                <div class="app-api-section" id="city-design">
+                  <div id="city-design" class="app-api-section-heading">
+                    <h2 class="app-api-section-title first-child">Doing city design with InfraWorks 360</h2>
+                  </div>
+                    <p>Autodesk InfraWorks 360 includs automated 3D model building, cloud technology, and specialized features for road, bridge, and drainage—help civil engineers plan and design transportation infrastructure. Manage larger-scale infrastructure models created from existing data sources, engineer in context from the start, and generate proposals at the appropriate level of detail.</p>
+                  <div class="owl-carousel">
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/import-data-combine-models-large.jpg"></a></div>
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/scenario-publishing-large.jpg"></a></div>
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/shadow-lighting-analysis-large.jpg"></a></div>
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/view-project-in-context-large.jpg"></a></div>
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/theme-palettes-large.jpg"></a></div>
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/ultra-realistic-visual-effects-large.jpg"></a></div>
+                    <div class="owl-vr"><a href="http://www.autodesk.com/products/infraworks-360/features/all/gallery-view"><img src="images/product/model-the-existing-environment-large.jpg"></a></div>
+                  </div>
+                </div>
+                <!-- end: city models -->
+                <!-- begin: REST API -->
+                <div class="app-api-section">
+                  <div id="Overview" class="app-api-section-heading">
+                    <h2 id="rest-api" class="app-api-section-title first-child">REST API - Read data from models</h2>
+                  </div>
+                  <p>
+                    Using the web standard REST protocol, you can read InfraWorks 360 model data, starting with <b>models</b>, each <b>proposal</b> and all the <b>features</b>.
+                  </p>
+                </div>
+                <!-- end: REST API -->
+                <!-- begin: live sample -->
+                <div class="app-api-section">
+                  <div id="Overview" class="app-api-section-heading">
+                    <h2 id="live-sample" class="app-api-section-title first-child">Live Sample</h2>
+                  </div>
+                  <p>
+                    To play with the Autodesk InfraWorks 360 REST API you'll need a model. If you already have one, go ahead and log with your Autodesk Account (the same you use to created/edit models). If you don't have one, try with the demo account:
+                      <br/><br/><br/><br/>
+                  </p>
+                </div>
+                <!-- end: live sample -->
+                <!-- begin: documentation -->
+                <div class="app-api-section">
+                  <div id="Overview" class="app-api-section-heading">
+                    <h2 id="documentation" class="app-api-section-title first-child">Documentation</h2>
+                  </div>
+                  <p>
+                      The main resource is the live <a href="http://api-devprod-docs.infraworks.autodesk.com/">documentation</a>, but also check these blog posts:
+                    <ul>
+                        <li><a href="http://adndevblog.typepad.com/infrastructure/2015/05/changes-on-infraworks-360-rest-api.html">Changes on Infraworks 360 REST API</a></li>
+                        <li><a href="http://adndevblog.typepad.com/infrastructure/2014/10/importing-alignment-from-infraworks-360-to-civil-3d.html">Importing Alignment from Infraworks 360 to Civil 3D</a></li>
+                    </ul>
+                  </p>
+                </div>
+                <!-- end: documentation -->
+                <!-- begin: create app -->
+                <div class="app-api-section">
+                  <div id="Overview" class="app-api-section-heading">
+                    <h2 id="create-app" class="app-api-section-title first-child">Create App</h2>
+                  </div>
+                  <p>
+                      To create your app, please send a message to augusto.goncalves@autodesk.com to request your key &amp; secret pair. Meanwhile, you can use the product with the <a href="http://www.autodesk.com/products/infraworks-360/free-trial">30 days trial</a>, interact with the community at the Autodesk Forum <a href="http://forums.autodesk.com/t5/infraworks-360-general/bd-p/509">general discussion</a> and get insights at the <a href="http://forums.autodesk.com/t5/infraworks-360-infratips/bg-p/131">infratips</a>.
+                    
+                  </p>
+                </div>
+                <!-- end: create app -->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER  -->
+  <div class="clearfix">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-footer">
+          <div class="container app-container">
+            <p>&#169; Copyright 2015 Autodesk. All rights reserved. </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END FOOTER -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <!--owl carousel-->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="http://www.fuelcdn.com/fuelux/3.6.3/js/fuelux.min.js"></script>
+  <script src="js/widget.js"></script>
+
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+        items: 4,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3]
+      });
+
+      // Adam added it
+      $('[data-clampedwidth]').each(function () {
+        var elem = $(this);
+        var parentPanel = elem.data('clampedwidth');
+        var resizeFn = function () {
+          var sideBarNavWidth = $(parentPanel).width()
+                  - parseInt(elem.css('paddingLeft')) - parseInt(elem.css('paddingRight'))
+                  - parseInt(elem.css('marginLeft')) - parseInt(elem.css('marginRight'))
+                  - parseInt(elem.css('borderLeftWidth')) - parseInt(elem.css('borderRightWidth'));
+          elem.css('width', sideBarNavWidth);
+        };
+
+        resizeFn();
+        $(window).resize(resizeFn);
+      });
+    });
+  </script>
+
+</body>
 </html>
